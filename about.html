@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+    />
+    <style type="text/css">
+      body {
+        font-family: Roboto Mono, sans-serif;
+        font-size: 20px;
+      }
+    </style>
+    <script src="script/script.js"></script>
+  </head>
+  <body class="container">
+    <header>
+      <h2 class="header-title">About Us</h2>
+      <ul class="horizontal">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+        <li style="float: right">
+          <a href="login.html">Login</a>
+        </li>
+        <li style="float: right">
+          <a href="signup.html">Signup</a>
+        </li>
+      </ul>
+    </header>
+    <div class="body">
+      <div class="image">
+        <iframe
+          src="https://giphy.com/embed/3o85xA30i7z1LUIISY"
+          width="500"
+          height="450"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="about-msg">
+        <h4 style="padding-top: 1em">Simple</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque enim
+          nesciunt consectetur praesentium iusto alias magnam quis.
+        </p>
+        <h4>Flexible</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque enim
+          nesciunt consectetur praesentium iusto alias magnam quis.
+        </p>
+        <h4>Accessible</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque enim
+          nesciunt consectetur praesentium iusto alias magnam quis.
+        </p>
+        <div class="button">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#video"
+          >
+            More Info
+          </button>
+        </div>
+        <div class="modal fade" id="video">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/AhtH4ITooCc"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

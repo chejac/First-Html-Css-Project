@@ -1,0 +1,135 @@
+.header-title {
+  text-align: center;
+  margin: 0em;
+  margin-top: 0.75em;
+}
+
+.body {
+  display: flex;
+}
+
+.horizontal {
+  margin: 1em;
+  background-color: #333;
+  overflow: hidden;
+  padding-right: 50px;
+}
+
+.horizontal li {
+  list-style-type: none;
+  float: left;
+}
+
+.horizontal li a {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  padding: 1em;
+  margin-bottom: 0em;
+  text-decoration: none;
+}
+
+.image {
+  margin-left: 1em;
+  float: left;
+  flex: 50%;
+}
+
+.home-msg {
+  flex: 50%;
+}
+
+.home-msg p {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 0em;
+  padding-top: 1em;
+}
+
+.about-msg {
+  flex: 50%;
+  margin-right: 1em;
+}
+
+.about-msg h4 {
+  font-size: 1.75em;
+  text-align: center;
+  margin: 0em;
+}
+
+.about-msg p {
+  font-size: 0.75em;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content {
+  background: transparent;
+  border: none;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info table,
+thead,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.card {
+  margin-left: 1em;
+  width: 15em;
+  height: 100%;
+  background: #555;
+  border: 1px transparent;
+  border-radius: 1em;
+  float: left;
+}
+
+.product-cards,
+.card-img-pos {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img {
+  width: 200px;
+  height: 130px;
+}
+
+.card-title,
+.card-text,
+.btn {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.login,
+.signup {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.checkboxes label {
+  font-size: 0.75em;
+}
+
+.selectAllCheckboxes {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+    />
+    <style type="text/css">
+      body {
+        font-family: Roboto Mono, sans-serif;
+        font-size: 20px;
+      }
+    </style>
+    <script src="script/script.js"></script>
+  </head>
+  <body class="container">
+    <header>
+      <h2 class="header-title">Signup</h2>
+      <ul class="horizontal">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+        <li style="float: right">
+          <a href="login.html">Login</a>
+        </li>
+        <li style="float: right">
+          <a href="signup.html">Signup</a>
+        </li>
+      </ul>
+    </header>
+    <div class="signup">
+      <form class="signup-form" onsubmit="return validateForm()">
+        <div class="signup-input">
+          <div class="client-name">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="First Name" required />
+            <br />
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="Last Name" required />
+          </div>
+          <div class="client-address">
+            <label for="address1">Address Line 1:</label>
+            <input
+              type="text"
+              id="address1"
+              placeholder="Address Line 1"
+              required
+            />
+            <br />
+            <label for="address2">Address Line 2:</label>
+            <input type="text" id="address2" placeholder="Address Line 2" />
+            <br />
+            <label for="city">City:</label>
+            <input type="text" id="city" placeholder="City" required />
+            <label for="states">State:</label>
+            <select id="states">
+              <option value="">--</option>
+              <option value="PA">PA</option>
+              <option value="NJ">NJ</option>
+              <option value="NY">NY</option>
+            </select>
+          </div>
+          <div class="client-email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="client-pass">
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" placeholder="Password" required />
+            <br />
+            <label for="confirm-pass">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm-pass"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <div class="checkboxes">
+            <label><input type="checkbox" name="chk" /> Remember me.</label>
+            <br />
+            <label>
+              <input type="checkbox" name="chk" /> Subscribe email for products,
+              discounts, and news.</label
+            >
+            <br />
+            <label>
+              <input type="checkbox" name="chk" required /> I Agree to the Terms
+              of Services.</label
+            >
+          </div>
+        </div>
+        <div class="selectAllCheckboxes">
+          <input
+            type="button"
+            onclick="toggleAllCheckboxes(true)"
+            value="Select All"
+          />
+          <input
+            type="button"
+            onclick="toggleAllCheckboxes(false)"
+            value="Unselect All"
+          />
+        </div>
+        <div class="submit-btn">
+          <input type="submit" value="Signup" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
